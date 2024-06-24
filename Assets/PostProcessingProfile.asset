@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8011140704154155769
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7230a38c95df444fa9b4e589348ffe1, type: 3}
+  m_Name: Print
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  printBlackLevel:
+    overrideState: 1
+    value: 0.25
+  sampleNoise:
+    overrideState: 0
+    value: 0.137
+  inkColour:
+    overrideState: 0
+    value: {r: 0.278, g: 0.231, b: 0.239, a: 1}
+  paperColour:
+    overrideState: 0
+    value: {r: 0.855, g: 0.788, b: 0.725, a: 1}
+  watermark:
+    overrideState: 1
+    value: {fileID: 2800000, guid: 37bf8c708eb80a546bd597a4c6311431, type: 3}
+    defaultState: 1
+  watermarkDepth:
+    overrideState: 1
+    value: 0.23
+  watermarkOffset:
+    overrideState: 1
+    value: {x: 0, y: 0}
+  watermarkAngle:
+    overrideState: 1
+    value: 0
+  watermarkScale:
+    overrideState: 1
+    value: 4
+  watermarkPadding:
+    overrideState: 1
+    value: {x: 2, y: 2}
+  watermarkSkew:
+    overrideState: 1
+    value: -0.33
+--- !u!114 &-414506721210075084
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d6c03961924d7a4f9b4328a6953918f, type: 3}
+  m_Name: Outline
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  thickness:
+    overrideState: 1
+    value: 5
+  detect:
+    overrideState: 1
+    value: 0.95
+  debug:
+    overrideState: 0
+    value: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+  m_Name: PostProcessingProfile
+  m_EditorClassIdentifier: 
+  settings:
+  - {fileID: -414506721210075084}
+  - {fileID: -8011140704154155769}
