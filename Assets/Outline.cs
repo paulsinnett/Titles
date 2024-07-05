@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 
 [System.Serializable]
-[PostProcess(typeof(OutlineRenderer), PostProcessEvent.AfterStack, "Custom/Outline")]
+[PostProcess(typeof(OutlineRenderer), PostProcessEvent.AfterStack, "Hidden/Custom/Outline")]
 public class Outline : PostProcessEffectSettings
 {
     public FloatParameter thickness = new FloatParameter

@@ -2,9 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Attach to Unity",
+            "name": "Attach to Running Unity Project",
             "type": "vstuc",
-            "request": "attach"
+            "request": "attach",
+            "endPoint": "127.0.0.1:56642",
         }
      ]
 }

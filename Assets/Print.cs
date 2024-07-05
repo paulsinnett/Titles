@@ -1,11 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 
 [System.Serializable]
-[PostProcess(typeof(PrintRenderer), PostProcessEvent.AfterStack, "Custom/Print")]
+[PostProcess(typeof(PrintRenderer), PostProcessEvent.AfterStack, "Hidden/Custom/Print")]
 public class Print : PostProcessEffectSettings
 {
 	[Range(0.0f, 1.0f), Tooltip("The input level cutoff between white and black")]

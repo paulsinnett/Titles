@@ -51,5 +51,7 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Titles.sln"
+    "dotnet.defaultSolution": "Titles.sln",
+    "editor.codeLens": false,
+    "editor.insertSpaces": false
 }
